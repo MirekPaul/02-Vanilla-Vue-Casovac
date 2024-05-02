@@ -25,11 +25,12 @@ div {
 	height: 10px;
 	background-color: blue;
 	transform: translateY(-115px) translateX(-10px);
-	transition: all 2.5s linear;
+	/*transition: all 2.5s linear;*/
 	animation-name: sudlich;
 	animation-duration: 2.5s;
-	animation-direction: reverse;
-	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-iteration-count: infinite	
+	/*animation-play-state:running;*/
 }
 
 .mensivetsi {
@@ -52,5 +53,22 @@ div {
 	90% {/*x*/
 		transform: translateY(-150px) translateX(-10px);
 	}
+}
 
+@keyframes lichsud {
+	0% {
+		transform: translateY(-115px) translateX(-10px);
+	}
+
+	10% {/*X*/
+		transform: translateY(-150px) translateX(-10px);
+	}
+
+	50% {
+		transform: translateY(-150px) translateX(300px);
+	}
+
+	60% {/*x*/		
+		transform: translateY(-115px) translateX(300px);
+	}
 }
