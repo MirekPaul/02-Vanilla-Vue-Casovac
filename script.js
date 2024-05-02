@@ -23,7 +23,14 @@ setInterval(()=>{
 		sudaNeboLicha.style.animationName = "sudlich";
 	}
 	else {		
-		sudaNeboLicha.style.animationName = "lichsud"
+		sudaNeboLicha.style.animationName = "lichsud";
+	}
+
+	if (nahodneCislo < 25) {
+		jeNeboNeni.style.animationName = "jeneni";
+	}
+	else {
+		jeNeboNeni.style.animationName = "nenije"
 	}
 
 },2500)
@@ -33,6 +40,7 @@ let vysl = document.querySelectorAll(".vysledek");
 
 //selektovani animacnich pumprdliku
 let sudaNeboLicha = document.querySelector(".sudeliche");
+let jeNeboNeni = document.querySelector(".mensivetsi");
 
 //vystupni pole zprvnu naplnime rucne - kod je stejny jako ten v casovaci
 vysl[0].innerText = nahodneCislo;
