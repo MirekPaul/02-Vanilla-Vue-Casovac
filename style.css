@@ -1,14 +1,56 @@
 div {
-	font-size: 25px;
+	font-size: 30px;
+	font-family:'Times New Roman';
+	padding: 0px;
+	margin-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	line-height: 30px;
 }
 
-.hlavni {
-	width: 250px;
-	height: 100px;
-	background-color: aqua;
+.hlavni { /*300 x 200 */
+	width: 300px;
+	height: 200px;
+	background-color: white;
 }
 
 .vysledek {
 	color: rgb(120,50,70);
 	font-weight: 900;
+}
+
+.sudeliche {
+	width: 10px;
+	height: 10px;
+	background-color: blue;
+	transform: translateY(-115px) translateX(-10px);
+	transition: all 2.5s linear;
+	animation-name: sudlich;
+	animation-duration: 2.5s;
+	animation-direction: reverse;
+	animation-iteration-count: infinite;
+}
+
+.mensivetsi {
+	background-color: green;
+}
+
+@keyframes sudlich {
+	0% {
+		transform: translateY(-115px) translateX(-10px);
+	}
+
+	40% {/*X*/
+		transform: translateY(-115px) translateX(300px);
+	}
+
+	50% {
+		transform: translateY(-150px) translateX(300px);
+	}
+
+	90% {/*x*/
+		transform: translateY(-150px) translateX(-10px);
+	}
+
 }
